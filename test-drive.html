@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autohaus Kyiv - Тест-драйв</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">VW</div>
+            <div class="loader-spinner"></div>
+            <p>Завантаження...</p>
+        </div>
+    </div>
+<header class="header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">VW</span>
+            Autohaus <span class="accent">Kyiv</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="models.html">Моделі</a>
+            <a class="active" href="test-drive.html">Тест-драйв</a>
+        </nav>
+
+        <a class="button button-small header-cta" href="models.html">Моделі</a>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <div class="eyebrow">Тест-драйв</div>
+        <h1>Сідайте за кермо</h1>
+        <p>Оберіть модель і зручну дату.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container form-layout">
+
+        <div>
+            <div class="eyebrow">Тест-драйв</div>
+            <h2 class="section-title">Відчуйте Volkswagen на дорозі</h2>
+            <p class="section-description">
+                Залиште заявку — менеджер передзвонить,
+                підбере комплектацію та час тест-драйву.
+            </p>
+
+            <div class="steps">
+                <div class="step"><span class="step-number">1</span>Залиште заявку</div>
+                <div class="step"><span class="step-number">2</span>Менеджер передзвонить</div>
+                <div class="step"><span class="step-number">3</span>Приїжджайте на тест-драйв</div>
+            </div>
+        </div>
+
+        <form class="booking-form" action="#" method="get">
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="requestType">Тип заявки</label>
+                    <select id="requestType" name="requestType">
+                        <option>Тест-драйв</option>
+                        <option>Консультація</option>
+                        <option>Кредит і лізинг</option>
+                        <option>Trade-in</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="model">Модель</label>
+                    <select id="model" name="model">
+                        <option value="">Ще не обрав(-ла)</option>
+                        <option>Polo</option>
+                        <option>Golf</option>
+                        <option>Passat</option>
+                        <option>Tiguan</option>
+                        <option>ID.4</option>
+                        <option>Touareg</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="name">Ім'я *</label>
+                    <input id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Телефон *</label>
+                    <input id="phone" name="phone" type="tel" required placeholder="+380 __ ___ __ __">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+
+                <div class="field">
+                    <label for="date">Бажана дата</label>
+                    <input id="date" name="date" type="date">
+                </div>
+
+                <div class="field field-full">
+                    <label for="comment">Коментар</label>
+                    <textarea id="comment" name="comment" placeholder="Комплектація, колір, trade-in..."></textarea>
+                </div>
+
+                <div class="field-full">
+                    <button class="button" type="submit">Надіслати заявку</button>
+                    <p class="form-note">
+                        Демонстраційна форма. Без сервера заявка не буде надіслана менеджеру.
+                    </p>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand footer-brand" href="index.html">Autohaus <span class="accent">Kyiv</span></a>
+            <p>Нові автомобілі Volkswagen у Києві.</p>
+        </div>
+        <div>
+            <h4>Навігація</h4>
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="models.html">Усі моделі</a>
+                <a href="test-drive.html">Тест-драйв</a>
+            </div>
+        </div>
+        <div>
+            <h4>Салон</h4>
+            <p>Київ</p>
+            <p>Пн-Сб, 9:00-20:00</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">© 2026 Autohaus Kyiv</div>
+    </div>
+</footer>
+
+</body>
+</html>
